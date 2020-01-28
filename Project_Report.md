@@ -12,7 +12,9 @@ The rating although will not be a part of the clustering, it can help in selecti
 The second set shall be list of food places within 1500 meters of each hotel. The list will be analysed to arrive at the number of places that serve different cuisines. (The list of Cuisines shall be the top ten popular cuisines in the city). The cleaned up data should look similar to the following
 
 "Hotel_Name"  "Cuisine A"  "Cuisine B"  "Cuisine C"  "Cuisine D" .....
+
    Hotel_1      Score1A     Score1B      Score1C       Score1D  ......
+
    Hotel_2      Score2A     Score2B      Score2C       Score2D  ......
    
 The score for every Hotel-Cuisine pair shall be based on the frequency and ratings of the Cuisine in the hotel proximity.
