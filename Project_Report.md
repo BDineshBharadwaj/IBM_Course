@@ -4,9 +4,8 @@ As someone who regularly uses hotel services on my trips, my choice of a hotel h
 In the project, i shall be working on a city i visit frequently, Hyderabad (India) and use Foursquare data in identifying its hotels as well as the food places that surround them to obtain the data I need. I shall then, Identify the most popular types of food that are available nearby and use that data to cluster similar hotels. I shall be using Kmeans clustering for the project.
 The stakeholders can use the analysis to suggest hotels to customers based on their food preferences as well as their previous stays.
 ### Data
-The first set of Data will be collecting the list of hotels in Hyderabad. For convenience, I'll be selecting the hotels managed by the hotel chain "OYO". The cleaned up Data should have the following columns. 
-
-"Hotel_Name"  "Latitude"  "Longitude" "Rating"
+The first set of Data will be collecting the list of hotels in Hyderabad, provided by Foursquare. The cleaned up Data looks like the following. 
+![Sample Hotel Data from Foursquare](https://github.com/BDineshBharadwaj/IBM_Course/blob/master/DataHotel.PNG)
 
 The rating although will not be a part of the clustering, it can help in selection and will be used in visualization to see highlight best rated hotels.
 
@@ -21,5 +20,3 @@ The second set shall be list of food places within 1500 meters of each hotel. Th
 The score for every Hotel-Cuisine pair shall be based on the frequency and ratings of the Cuisine in the hotel proximity.
 The above data shall be used to cluster Hotels using Kmeans algorithm.
 
-
-Don't evaluate the paper yet. Gotta add Data screenshots.
