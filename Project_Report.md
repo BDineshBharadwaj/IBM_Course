@@ -30,6 +30,6 @@ The cleaned up data should look similar to the following.
 
    Hotel_2         Score2A         Score2B         Score2C         Score2D  ......
    
-The score for every Hotel-Cuisine pair shall be based on the frequency and ratings of the Cuisine in the hotel proximity.
+The score for every Hotel-Cuisine pair shall be based on the frequency and ratings of the Cuisine in the hotel proximity. The  frequency will be calculated from the number of venues Foursquare outputs for a given Cuisine. The ratings for each cuisine will also be provided by Foursquare on a premium call.
 The above data shall be used to cluster Hotels using Kmeans algorithm.
 
