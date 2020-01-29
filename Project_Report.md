@@ -5,6 +5,7 @@ In the project, i shall be working on a city i visit frequently, Hyderabad (Indi
 The stakeholders can use the analysis to suggest hotels to customers based on their food preferences as well as their previous stays.
 ### Data
 The first set of Data will be collecting the list of hotels in Hyderabad, provided by Foursquare. The cleaned up Data looks like the following. 
+
 ![Sample Hotel Data from Foursquare](https://github.com/BDineshBharadwaj/IBM_Course/blob/master/DataHotel.PNG)
 
 The rating although will not be a part of the clustering, it can help in selection and will be used in visualization to see highlight best rated hotels.
