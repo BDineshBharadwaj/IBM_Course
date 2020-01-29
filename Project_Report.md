@@ -8,9 +8,21 @@ The first set of Data will be collecting the list of hotels in Hyderabad, provid
 
 ![Sample Hotel Data from Foursquare](https://github.com/BDineshBharadwaj/IBM_Course/blob/master/DataHotel.PNG)
 
-The rating although will not be a part of the clustering, it can help in selection and will be used in visualization to see highlight best rated hotels.
+The second set of Data shall be list of food places within 1500 meters of each hotel. The list will be analysed to arrive at the number of places that serve different cuisines in its proximity. (The list of Cuisine types shall be the top ten popular cuisines in the country).
+The list is as follows
+1. South Indian
+2. North Indian
+3. Cafe
+4. Fast food
+5. Biryani
+6. Pizza
+7. Burger
+8. Chinese
+9. Bakery
+10. Continental
 
-The second set shall be list of food places within 1500 meters of each hotel. The list will be analysed to arrive at the number of places that serve different cuisines. (The list of Cuisines shall be the top ten popular cuisines in the city). The cleaned up data should look similar to the following
+
+The cleaned up data should look similar to the following.
 
 "Hotel_Name"     "Cuisine A"     "Cuisine B"     "Cuisine C"     "Cuisine D" .....
 
