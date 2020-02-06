@@ -34,5 +34,15 @@ The score for every Hotel-Cuisine pair shall be based on the frequency of the Cu
 The above data shall be used to cluster Hotels using Kmeans algorithm.
 ## Methodology
 1. The first challenge was to obtain a list of Hotels in Hyderabad. Foursquare only returns 50 venues per an API call. We need a bigger list of Hotels to work with. To facilitate this, ten localities that are evenly spaced out across hyderabad have been picked and hotels in 5 km radius of each of the locality have been obtained. Then the collection of Hotels has been checked for duplicates and a final list of 312 hotels has been obtained.
+Areas chosen with their coordinates
 ![Hotel Data from Foursquare](https://github.com/BDineshBharadwaj/IBM_Course/blob/master/Areas.PNG)
+top 10 of the Hotels with coordinates 
 ![Hotel Data from Foursquare](https://github.com/BDineshBharadwaj/IBM_Course/blob/master/Hotels.PNG)
+
+2. The hotels have been visualized using Folium package.
+![Hotel Data from Foursquare](https://github.com/BDineshBharadwaj/IBM_Course/blob/master/Map.PNG)
+
+3. A feautre set is generated using collecting the frequency of different cuisines as mentioned in the Data section. FourSquare has been used to get the data. The data has been obtained over a course of four days because of the limits to Foursquare API service.The data is stored on IBM free database. The scaled and normalized feature set is as follows.
+![Hotel Data from Foursquare](https://github.com/BDineshBharadwaj/IBM_Course/blob/master/Featureset.PNG)
+
+4. Kmeans algorithm has been used to cluster the feature set into six clusters. the algorithm is run 12 different initiations and the best set is chosen.
