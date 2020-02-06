@@ -30,6 +30,9 @@ The cleaned up data should look similar to the following.
 
    Hotel_2         Score2A         Score2B         Score2C         Score2D  ......
    
-The score for every Hotel-Cuisine pair shall be based on the frequency and ratings of the Cuisine in the hotel proximity. The  frequency will be calculated from the number of venues Foursquare outputs for a given Cuisine. The ratings for each cuisine will also be provided by Foursquare on a premium call.
+The score for every Hotel-Cuisine pair shall be based on the frequency of the Cuisine in the hotel proximity. The  frequency will be calculated from the number of venues Foursquare outputs for a given Cuisine.
 The above data shall be used to cluster Hotels using Kmeans algorithm.
-
+## Methodology
+1. The first challenge was to obtain a list of Hotels in Hyderabad. Foursquare only returns 50 venues per an API call. We need a bigger list of Hotels to work with. To facilitate this, ten localities that are evenly spaced out across hyderabad have been picked and hotels in 5 km radius of each of the locality have been obtained. Then the collection of Hotels has been checked for duplicates and a final list of 312 hotels has been obtained.
+![Hotel Data from Foursquare](https://github.com/BDineshBharadwaj/IBM_Course/blob/master/Areas.PNG)
+![Hotel Data from Foursquare](https://github.com/BDineshBharadwaj/IBM_Course/blob/master/Hotels.PNG)
