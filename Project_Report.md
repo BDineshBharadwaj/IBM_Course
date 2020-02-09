@@ -54,9 +54,28 @@ The distribution of Hotels among the clusters is as follows.
 The hotels have been clustered into six groups and the following plots are generated to visualize the clusters.
 1. Bar charts with the mean of each group.
 ![Bar1](https://github.com/BDineshBharadwaj/IBM_Course/blob/master/Bar1.PNG)
+
 2.
 ![Bar2](https://github.com/BDineshBharadwaj/IBM_Course/blob/master/Bar1.PNG)
 
 3. The folium package is used to visualize the clusters on the map.
 ![hotel map clustered](https://github.com/BDineshBharadwaj/IBM_Course/blob/master/MapCluster.PNG)
  
+## Discussion
+From Bar1 plot from Results section, We can classify the clusters, roughly, as these categories.
+1. Cluster 1 seems to have the lowest frequency of all types of cuisines in its proximity. Not recommended.
+2. Cluster 2 seems to be the best spot for most cuisines except Burgers and pizza
+3. Cluster 0 seems to a pretty good spot for most cuisines as well.
+4. Cluster 4 and 5 are pretty much in the middle of the bar. i.e they have the almost mean frequency on all cuisines making them just okay.
+
+From Bar2 plot from Results section, we can deduce these points.
+1. Cluster 1 is clearly, the worst spot for any cuisine on the list. Not recommended.
+2. Cluster 2 seems to be the best spot for South Indian food followed by cluster 0, where as cluster 1 is the worst.
+3. Cluster 0 takes over cluster 2 asthe best spot to have North Indian.
+4. Cafes have the same top trend as North Indian food. Cluster 0, followed by cluster 2.
+5. When it comes to Fast food, Biryani, Chinese and Continental food, Cluster 2 dominates again by a higher margin followed by Cluster 0.
+6. Cluster 0 wins it when it comes to Burgers and Pizza! 
+7. Cluster 5 shows a high frequency for Bakery almost on par with Cluster 2.
+
+## Conclusion
+The cluster 2 hotels have the best access to all cuisines in the list, followed by cluster 0. Cluster 5 shows a good frequency of Bakeries. Thus from the battle of Neighbourhoods, we have clustered the hotels in hyderabad based.
