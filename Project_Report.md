@@ -57,7 +57,7 @@ The hotels have been clustered into five groups and the following plots are gene
 ![Bar1](https://github.com/BDineshBharadwaj/IBM_Course/blob/master/Bar1.PNG)
 
 2.
-![Bar2](https://github.com/BDineshBharadwaj/IBM_Course/blob/master/Bar1.PNG)
+![Bar2](https://github.com/BDineshBharadwaj/IBM_Course/blob/master/Bar2.PNG)
 
 3. The folium package is used to visualize the clusters on the map.
 ![hotel map clustered](https://github.com/BDineshBharadwaj/IBM_Course/blob/master/MapCluster.PNG)
