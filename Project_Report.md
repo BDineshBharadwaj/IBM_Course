@@ -45,13 +45,14 @@ top 10 of the Hotels with coordinates
 3. A feature set is generated using collecting the frequency of different cuisines as mentioned in the Data section. FourSquare has been used to get the data. The data has been obtained over a course of four days because of the limits to Foursquare API service.The data is stored on IBM free database. The scaled and normalized feature set is as follows.
 ![Featureset Data from Foursquare](https://github.com/BDineshBharadwaj/IBM_Course/blob/master/Featureset.PNG)
 
-4. Kmeans algorithm has been used to cluster the feature set into six clusters. the algorithm is run 12 different initiations and the best set is chosen. The sklearn package is used to do the machine learning.
+4. Kmeans algorithm has been used to cluster the feature set into five clusters. the algorithm is run 12 different initiations and the best set is chosen. The sklearn package is used to do the machine learning.
 
 ## Results
 The distribution of Hotels among the clusters is as follows.
+
 ![Cluster numbers](https://github.com/BDineshBharadwaj/IBM_Course/blob/master/Clustercount.PNG)
 
-The hotels have been clustered into six groups and the following plots are generated to visualize the clusters.
+The hotels have been clustered into five groups and the following plots are generated to visualize the clusters.
 1. Bar charts with the mean of each group.
 ![Bar1](https://github.com/BDineshBharadwaj/IBM_Course/blob/master/Bar1.PNG)
 
@@ -60,22 +61,30 @@ The hotels have been clustered into six groups and the following plots are gener
 
 3. The folium package is used to visualize the clusters on the map.
 ![hotel map clustered](https://github.com/BDineshBharadwaj/IBM_Course/blob/master/MapCluster.PNG)
- 
+ (In the map,  the cluster 0 is represented in red,
+               the cluster 1 is represented in violet,
+               the cluster 2 is represented in blue,
+               the cluster 3 is represented in radium blue
+               the cluster 4 is represented in orange)
 ## Discussion
 From Bar1 plot from Results section, We can classify the clusters, roughly, as these categories.
-1. Cluster 1 seems to have the lowest frequency of all types of cuisines in its proximity. Not recommended.
-2. Cluster 2 seems to be the best spot for most cuisines except Burgers and pizza
-3. Cluster 0 seems to a pretty good spot for most cuisines as well.
-4. Cluster 4 and 5 are pretty much in the middle of the bar. i.e they have the almost mean frequency on all cuisines making them just okay.
+1. Cluster 3 seems to have the lowest frequency of all types of cuisines in its proximity. Not recommended.
+2. Cluster 0 and 4 seem to be the best spot for most cuisines.
+3. Cluster 1 and 2 are pretty much in the middle of the bar. i.e they have the almost mean frequency on all cuisines making them just okay.
 
 From Bar2 plot from Results section, we can deduce these points.
-1. Cluster 1 is clearly, the worst spot for any cuisine on the list. Not recommended.
-2. Cluster 2 seems to be the best spot for South Indian food followed by cluster 0, where as cluster 1 is the worst.
-3. Cluster 0 takes over cluster 2 asthe best spot to have North Indian.
-4. Cafes have the same top trend as North Indian food. Cluster 0, followed by cluster 2.
-5. When it comes to Fast food, Biryani, Chinese and Continental food, Cluster 2 dominates again by a higher margin followed by Cluster 0.
-6. Cluster 0 wins it when it comes to Burgers and Pizza! 
-7. Cluster 5 shows a high frequency for Bakery almost on par with Cluster 2.
+1. Cluster 3 is clearly, the worst spot for any cuisine on the list. Not recommended.
+2. Cluster 4 seems to be the best spot for South Indian food followed by cluster 0.
+3. Cluster 0 takes over cluster 4 as the best spot to have North Indian, Cafes, Pizzas and Burgers.
+4. When it comes to Fast food, Biryani, Chinese and Continental food, Cluster 4 dominates again by a higher margin followed by Cluster 0.
+5. Cluster 2 shows a high frequency for Bakery almost after Cluster 4.
 
+From the Clustered Map, we can observe the follwing details.
+1. The cluster 3 which is least recommended, seems to be located around the border of the city. (Radium blue spots on the map)
+2. The most recommended hotels (Cluster 4) seems to be confined to the Ameerpet region of the city.
+3. The next best hotels (Cluster 0) seems to be around the Hi tech city area (Jubilee hills, Madhapur, Gachibowli areas) of the city and a little around Banjara hills.
+4. The rest of the "Okay" hotels, with mean frequencies of all cuisines (Clusters 1 and 2) seems to be spread across the city with small spreads around Kukatpally and Abids.
+
+It can also be observed that for a project like this, collection of Data and it's cleaning takes more effort than the machine learning part of it.
 ## Conclusion
-The cluster 2 hotels have the best access to all cuisines in the list, followed by cluster 0. Cluster 5 shows a good frequency of Bakeries. Thus from the battle of Neighbourhoods, we have clustered the hotels in hyderabad based.
+The hotels in cluster 4 and 0 have the best access to all cuisines in the list, whereas hotels in cluster 3 have the worst access. Thus from the battle of Neighbourhoods, we have clustered the hotels in hyderabad based on their proximity to multiple cuisines.
