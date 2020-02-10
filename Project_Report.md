@@ -49,7 +49,7 @@ top 10 of the Hotels with coordinates
 
 ## Results
 The distribution of Hotels among the clusters is as follows.
-![Cluster numbers]()
+![Cluster numbers](https://github.com/BDineshBharadwaj/IBM_Course/blob/master/Clustercount.PNG)
 
 The hotels have been clustered into six groups and the following plots are generated to visualize the clusters.
 1. Bar charts with the mean of each group.
